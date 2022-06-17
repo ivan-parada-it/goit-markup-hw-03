@@ -1,0 +1,191 @@
+:root {
+    --black-color: #212121;
+    --akcent-color: #2196F3;
+    --secondary-color: #757575;
+    --white-color: #FFFFFF;
+    }
+    /* 
+    Navigation color
+    основной цвет шрифта: #212121;
+    акцент цвет: #2196F3;
+    вторичный цвет шрифта: #2196F3;
+    белый цвет: #FFFFFF;
+    */
+* {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;    
+    letter-spacing: 0.03em;
+
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.link {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: var(--black-color);
+}
+.link-nav {
+    font-weight: 500;
+}
+.link:hover,
+.link:focus {
+    color: var(--akcent-color);
+}
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+/* Секція хедер */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--akcent-color);
+}
+.studio-black {
+    color: var(--black-color);
+}
+.logo:hover .studio-black,
+.logo:focus .studio-black {
+    color: var(--akcent-color);
+}
+.logo:focus .web-akcent,
+.logo:hover .web-akcent {
+    color: var(--black-color);
+}
+.list {
+    text-decoration: none;
+}
+.link-header-contact {
+    color: var(--secondary-color);
+}
+/* Секція Hero */
+.hero {
+    background-color:#2F303A;
+    text-align: center;
+}
+.title-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
+}
+.button {
+    width: 200px;
+    height: 50px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.14;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--akcent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+/* Секція Advantages */
+.advantages-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph {
+    line-height: 1.71;
+    color: var(--secondary-color);
+}
+/* Секція what we do */
+/* Секція Our team */
+.name-surname {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+/* Секція Footer */
+.footer {
+    background: #2F303A;
+}
+.studio-white {
+    color: var(--white-color);
+}
+.footer-logo:hover .web-akcent,
+.footer-logo:focus .web-akcent {
+    color: var(--white-color);
+}
+.footer-logo:hover .studio-white,
+.footer-logo:focus .studio.white {
+    color: var(--akcent-color);
+}
+.footer-adrress {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--white-color);
+}
+.footer-contact {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* Portfolio */
+/* Filtr */
+.filtr-button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filtr-button-activ,
+.filtr-button:hover,
+.filtr-button:focus {
+    color: var(--white-color);
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+/* Our works */
+.project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
+}
+.filtr-project {    
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-color);
+}

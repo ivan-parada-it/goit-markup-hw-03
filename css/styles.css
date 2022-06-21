@@ -46,11 +46,11 @@ body {
     line-height: 1.17;
     text-align: center;
 }
-.section {
-    padding-top: 94px;
-}
 /* Секція хедер */
 .header {
+    border-bottom: 1px solid #ececec;
+}
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1600px;
     height: 600px;
     background-color:#2F303A;
 }
@@ -147,9 +146,10 @@ body {
     cursor: pointer;
 }
 /* Секція Advantages */
-.advantages{
+.advantages-container {
     width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
+    padding-top: 94px;
 }
 .title-advantages {
     display: none;
@@ -178,10 +178,11 @@ body {
 }
 
 /* Секція what we do */
-.doing {
+.doing-container {
     width: 1200px;
-    padding-bottom: 94px;    
     margin: 0 auto;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .title-doing {
     margin-bottom: 50px;
@@ -198,17 +199,19 @@ body {
 }
 /* Секція Our team */
 .team {
-    width: 1600px;
     background-color: var(--team-section-background);
+}
+.team-container {    
+    width: 1200px;    
+    margin: 0 auto;    
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 .title-team {
     margin-bottom: 50px;
 }
 .list-team {
     display: flex;
-    width: 1200px;    
-    margin: 0 auto;
 }
 .list-team-item {
     flex-basis: calc(100%-90)/4;
@@ -219,12 +222,15 @@ body {
 .list-team-item:not(:last-child) {
     margin-right: 30px;
 }
+.name-position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .name-surname {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .position {
@@ -232,15 +238,16 @@ body {
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-color);
-    margin-bottom: 30px;
 }
 /* Секція Footer */
 .footer {
     background: #2F303A;
-    width: 1600px;
+}
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
 }
 .studio-white {
     color: var(--white-color);
@@ -269,17 +276,17 @@ body {
 /* Portfolio */
 /* Filtr */
 .filtrs {
-    width: 1600px;
     padding-bottom: 94px;
 }
-.div-filtrs {
+.div-container {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 94px;
 }
 .list-filtrs {
     display: flex;
     flex-wrap: wrap;   
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .filtr-button {
@@ -321,7 +328,7 @@ body {
     margin-bottom: 30px;
 }
 .div-project {
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 .project {
     font-weight: 700;

@@ -46,6 +46,17 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+.section {
+    padding-top: 94px;
+}
+.doing,
+.team {
+    padding-bottom: 94px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 /* Секція хедер */
 .header {
     border-bottom: 1px solid #ececec;
@@ -146,11 +157,6 @@ body {
     cursor: pointer;
 }
 /* Секція Advantages */
-.advantages-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 94px;
-}
 .title-advantages {
     display: none;
 }
@@ -161,7 +167,7 @@ body {
     margin-right: 30px;
 }
 .list-advantages-item {
-    flex-basis: calc((100%-90)/4);
+    width: 270px;
 }
 .advantages-title {
     font-size: 14px;
@@ -178,12 +184,6 @@ body {
 }
 
 /* Секція what we do */
-.doing-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
 .title-doing {
     margin-bottom: 50px;
 }
@@ -200,12 +200,6 @@ body {
 /* Секція Our team */
 .team {
     background-color: var(--team-section-background);
-}
-.team-container {    
-    width: 1200px;    
-    margin: 0 auto;    
-    padding-bottom: 94px;
-    padding-top: 94px;
 }
 .title-team {
     margin-bottom: 50px;
@@ -242,12 +236,7 @@ body {
 /* Секція Footer */
 .footer {
     background: #2F303A;
-}
-.footer-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 .studio-white {
     color: var(--white-color);
@@ -264,11 +253,15 @@ body {
     font-style: normal;
     line-height: 1.71;
     color: var(--white-color);
+    margin-bottom: 9px;
 }
 .footer-contact {
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer-address-container {
     padding-top: 20px;
@@ -277,11 +270,6 @@ body {
 /* Filtr */
 .filtrs {
     padding-bottom: 94px;
-}
-.div-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 94px;
 }
 .list-filtrs {
     display: flex;

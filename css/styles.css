@@ -56,6 +56,7 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 /* Секція хедер */
 .header {
@@ -253,14 +254,13 @@ body {
     font-style: normal;
     line-height: 1.71;
     color: var(--white-color);
-    margin-bottom: 9px;
 }
 .footer-contact {
     font-style: normal;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-contact:not(:last-child) {
+.footer-list-link:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-address-container {
@@ -311,11 +311,15 @@ body {
 .list-works-item:not(:nth-child(3n+3)) {
     margin-right: 30px;
 }
+.img-portfolio {
+    display: block;
+}
 .list-works-item {
-    border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
 .div-project {
+    border: 1px solid #EEEEEE;
+    border-top: none;
     padding: 20px 24px;
 }
 .project {

@@ -67,6 +67,17 @@ body {
 
 /* Header  */
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid yellow;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
 .logo {
     font-size: 18px;
     font-family: Raleway, sans-serif;
@@ -75,10 +86,18 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-accent);
+    padding: 25px 76px 25px 200px;
+    height: 21px;
+    border: 1px solid blue;
 }
 
 .logo-studio-black {
     color: var(--color-background-navyblue);
+}
+
+.list-nav {
+    display: flex;
+    padding: 0;
 }
 
 .link-nav {
@@ -92,6 +111,10 @@ body {
 
 address {
     font-style: normal;
+}
+
+.header-kontact {
+    display: flex;
 }
 
 .link-kontact {

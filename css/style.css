@@ -32,6 +32,10 @@ body {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 
 /* Link active and hover */
 
@@ -68,14 +72,19 @@ body {
 /* Header  */
 
 .header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid yellow;
-    align-items: center;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -86,9 +95,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-accent);
-    padding: 25px 76px 25px 200px;
-    height: 21px;
-    border: 1px solid blue;
+    margin-right: 76px;
 }
 
 .logo-studio-black {
@@ -97,8 +104,10 @@ body {
 
 .list-nav {
     display: flex;
-    padding: 0;
+    gap: 40px;
 }
+
+.list-nav-item {}
 
 .link-nav {
     font-size: 16px;
@@ -107,6 +116,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-background-navyblue);
+    padding: 24px 0;
 }
 
 address {
@@ -115,6 +125,7 @@ address {
 
 .header-kontact {
     display: flex;
+    gap: 40px;
 }
 
 .link-kontact {
